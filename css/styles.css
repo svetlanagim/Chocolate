@@ -1,0 +1,150 @@
+/* #region FONTS */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* #endregion FONTS*/
+
+/* BODY */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/* #region HEADER */
+.header {}
+
+.nav {}
+
+.logo {}
+
+.logo-icon {}
+
+.menu {}
+
+.menu-list {}
+
+.menu-list-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+
+.socials {}
+
+.socials-list {}
+
+.socials-list-link {}
+
+.socials-icons {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+/* #endregion HEADER */
+
+/* #region HERO section */
+.hero {
+    border-radius: 30px;
+    width: 1136px;
+    height: 600px;
+    background: rgba(17, 17, 17, 0.4);
+    color: #fff;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.hero-button-buy {
+    font-weight: 600;
+    background: #fd9222;
+    border-radius: 100px;
+    padding-block: 14px;
+    padding-inline: 40px;
+    color: #fff;
+    border: none;
+}
+
+.hero-button-buy:hover {
+    background: #fcf1e0;
+    color: #fd9222;
+}
+
+.hero-button-made {
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding-block: 14px;
+    padding-inline: 40px;
+    color: #fff;
+}
+
+.hero-button-made:hover {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+.hero-link {}
+
+.hero-scroll {
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+/* #endregion HERO section */

@@ -1,7 +1,7 @@
 /* #region FONTS */
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Medium.woff2') format('woff2');
+    src: url(../fonts/Montserrat-Medium.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-BoldItalic.woff2') format('woff2');
+    src: url(../fonts/Montserrat-BoldItalic.woff2) format('woff2');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Bold.woff2') format('woff2');
+    src: url(../fonts/Montserrat-Bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-SemiBold.woff2') format('woff2');
+    src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Regular.woff2') format('woff2');
+    src: url(../fonts/Montserrat-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -42,6 +42,51 @@
 /* #endregion FONTS*/
 
 /* BODY */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -49,27 +94,55 @@ body {
     background: #fafafa;
 }
 
-ul,
-ol {
-    list-style-type: none;
+
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
+.title {
+    width: 412px;
+    margin: 0 auto 50px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
 }
 
+.accent-text {
+    color: #fd9222;
+}
 
 /* #region HEADER */
-.header {}
+.header .container {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
 
-.nav {}
+.nav {
+    display: flex;
+    align-items: center;
+}
 
-.logo {}
+.logo {
+    margin-right: 365px;
+}
 
 .logo-icon {}
 
-.menu {}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 .menu-list {}
 
@@ -78,9 +151,21 @@ a {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #111;
+    padding: 32px 0;
 }
 
-.socials {}
+.menu-list-link:hover,
+.menu-list-link:active {
+    color: #fd9222;
+    ;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: auto;
+}
 
 .socials-list {}
 
@@ -94,20 +179,40 @@ a {
     height: 40px;
 }
 
+.socials-icons:hover,
+.socials-icons:active {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+}
+
 /* #endregion HEADER */
 
 /* #region HERO section */
 .hero {
     border-radius: 30px;
-    width: 1136px;
-    height: 600px;
     background: rgba(17, 17, 17, 0.4);
     color: #fff;
+    padding: 381px 40px 40px;
+    margin-bottom: 80px;
 }
 
 .hero-title {
     font-weight: 500;
     font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-controls {
+    display: flex;
+    gap: 14px;
+    align-items: center;
 }
 
 .hero-button-buy {
@@ -140,7 +245,11 @@ a {
     color: #fd9222;
 }
 
-.hero-link {}
+.hero-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
 .hero-scroll {
     border-radius: 100%;
@@ -148,3 +257,97 @@ a {
 }
 
 /* #endregion HERO section */
+
+/* benefits */
+/* #region benefits */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
+.benefits {
+    background: #1e1823;
+    padding: 50px 0;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+}
+
+.benefits-item {
+    width: 308px;
+}
+
+.benefits-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #fff;
+    margin-bottom: 18px;
+
+}
+
+.benefits-desc {
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* #endregion benefits */
+
+/* ingredients */
+/* #region ingredients */
+.ingredients {
+    padding-top: 120px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.ingredients-item {
+    border-radius: 15px;
+    width: calc((100% - 3 * 32px) / 4);
+    padding: 28px 23px;
+}
+
+/* ? a * n + b */
+.ingredients-item:nth-child(2n) {
+    border: 1px solid #fd9222;
+}
+
+.ingredients-item:nth-child(4n + 1) {
+    background-color: #fd9222;
+    color: #ffffff;
+}
+
+.ingredients-item:nth-child(4n + 3) {
+    background-color: #1e1823;
+    color: #ffffff;
+}
+
+.ingredients-ill {
+    margin-bottom: 36px;
+}
+
+.ingredients-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/* #endregion ingredients */

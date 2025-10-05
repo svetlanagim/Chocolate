@@ -1,67 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="cacao, chocolate, milk" />
-    <meta name="description"
-        content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!" />
+    <meta
+      name="description"
+      content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
+    />
     <title>Simply Chocolate</title>
-    <link rel="shortcut icon" href="./images/icons/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/favicon.svg"
+      type="image/x-icon"
+    />
 
+    <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="header" id="home">
+      <div class="container">
         <nav class="nav">
-            <a class="logo" href="./index.html">
-                <img class="logo-icon" src="./images//icons/logo.svg" alt="Logo Simply Chocolate" />
-            </a>
-            <!-- Menu -->
-            <ul class="menu">
-                <li class="menu-list"><a class="menu-list-link" href="#home">Home</a></li>
-                <li class="menu-list"><a class="menu-list-link" href="#made">How it&#8217;s made?</a></li>
-                <li class="menu-list"><a class="menu-list-link" href="#reviews">Chocolate is loved</a></li>
-            </ul>
+          <a class="logo" href="./index.html">
+            <img
+              class="logo-icon"
+              src="./images//icons/logo.svg"
+              alt="Logo Simply Chocolate"
+            />
+          </a>
+          <!-- Menu -->
+          <ul class="menu">
+            <li class="menu-list">
+              <a class="menu-list-link" href="#home">Home</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-list-link" href="#made">How it&#8217;s made?</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-list-link" href="#reviews">Chocolate is loved</a>
+            </li>
+          </ul>
         </nav>
 
         <!-- Socials -->
         <ul class="socials">
-            <li class="socials-list">
-                <a class="socials-list-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Site facebook.com">
-                </a><img class="socials-icons" src="./images/icons/facebook.svg" alt="facebook" />
-            </li>
-            <li class="socials-list">
-                <a class="socials-list-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Site instagram.com"><img class="socials-icons" src="./images/icons/instagram.svg"
-                        alt="instagram" /></a>
-            </li>
-            <li class="socials-list">
-                <a class="socials-list-link" href="https://x.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Site x.com"><img class="socials-icons" src="./images/icons/twitter.svg"
-                        alt="twitter" /></a>
-            </li>
+          <li class="socials-list">
+            <a
+              class="socials-list-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Site facebook.com"
+            >
+            </a
+            ><img
+              class="socials-icons"
+              src="./images/icons/facebook.svg"
+              alt="facebook"
+            />
+          </li>
+          <li class="socials-list">
+            <a
+              class="socials-list-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Site instagram.com"
+              ><img
+                class="socials-icons"
+                src="./images/icons/instagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li class="socials-list">
+            <a
+              class="socials-list-link"
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Site x.com"
+              ><img
+                class="socials-icons"
+                src="./images/icons/twitter.svg"
+                alt="twitter"
+            /></a>
+          </li>
         </ul>
+      </div>
     </header>
 
     <!-- Main section -->
     <main>
-        <!-- HERO section -->
-        <section class="hero" id="#hero">
-            <h1 class="hero-title">Treat yourself or a loved one to
-                our finest ingredients for a moment
-                of pure delight!</h1>
-            <button class="hero-button-buy" type="button">Buy now</button>
-            <button class="hero-button-made" type="button">How it’s made</button>
-            <a class="hero-link" href="#">scroll down<img class="hero-scroll" src="./images/icons/arrow-down.svg"
-                    alt=""></a>
-        </section>
-    </main>
-</body>
+      <!-- HERO section -->
+      <section class="hero" id="#hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <div class="hero-wrapper">
+            <div class="hero-controls">
+              <button class="hero-button-buy" type="button">Buy now</button>
+              <button class="hero-button-made" type="button">
+                How it’s made
+              </button>
+            </div>
+            <a class="hero-link" href="#benefits"
+              >scroll down<img
+                class="hero-scroll"
+                src="./images/icons/arrow-down.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
 
+      <!-- benefits -->
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <h2 class="visually-hidden">benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <h3 class="benefits-title">Unsurpassed taste</h3>
+              <p class="benefits-desc">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Affordable price</h3>
+              <p class="benefits-desc">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Own production</h3>
+              <p class="benefits-desc">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ingredients -->
+      <section class="ingredients">
+        <div class="container">
+          <h2 class="title">
+            It all adds up to one exceptional
+            <span class="accent-text">taste</span> sensation
+          </h2>
+          <ul class="ingredients-list">
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-1.png"
+                alt="MILK CHOCOLATE"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">MILK CHOCOLATE</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-2.png"
+                alt="MILK"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">MILK</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-3.png"
+                alt="NUTS"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">NUTS</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-4.png"
+                alt="SEMI - SWEET CHOCOLATE"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">SEMI - SWEET CHOCOLATE</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-5.png"
+                alt="CACAO"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">CACAO</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-6.png"
+                alt="RASPBERRY"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">RASPBERRY</h3>
+            </li>
+            <li class="ingredients-item">
+              <img
+                class="ingredients-ill"
+                src="/images/ingredients/img-7.png"
+                alt="COCONUT OIL"
+                width="214"
+                height="160"
+              />
+              <h3 class="ingredients-title">COCONUT OIL</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

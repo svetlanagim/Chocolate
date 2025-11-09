@@ -1,3 +1,7 @@
+.none {
+    display: none;
+}
+
 /* #region FONTS */
 @font-face {
     font-family: 'Montserrat';
@@ -96,52 +100,123 @@ body {
 
 
 .container {
-    max-width: 1168px;
+    min-width: 320px;
+    width: 375px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 20px;
+}
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+@media only screen and (min-width: 768px) {
+    .container {
+        min-width: 736px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        min-width: 1168px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
 }
 
 .title {
-    width: 412px;
+    /* width: 412px; */
     margin: 0 auto 50px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
     color: #111;
 }
 
+@media only screen and (min-width: 768px) {
+    .title {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
 .accent-text {
     color: #fd9222;
 }
 
-/* #region HEADER */
-.header .container {
+/*!#region HEADER */
+.header {
     display: flex;
     align-items: center;
-    padding: 24px 0;
+    padding: 17px 0;
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        padding: 24px 0;
+    }
 }
 
 .nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav {}
 }
 
 .logo {
-    margin-right: 365px;
+    /* width: 169px; */
+    /* height: 21px; */
 }
 
-.logo-icon {}
+@media only screen and (min-width: 1200px) {
+    .logo {
+        width: 213px;
+        height: 24px;
+        margin-right: 365px;
+    }
+}
+
+
+.logo-icon {
+    width: 100%;
+}
+
+.burger-btn {
+    border: none;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .burger-btn {
+        display: none;
+    }
+}
+
+.burger-icon {
+    stroke: #111111;
+}
+
 
 .menu {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    display: none
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
 }
 
 .menu-list {}
@@ -161,10 +236,17 @@ body {
 }
 
 .socials {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-left: auto;
+    display: none;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-left: auto;
+    }
 }
 
 .socials-list {}

@@ -26,13 +26,21 @@
     <header class="header" id="home">
       <div class="container">
         <nav class="nav">
-          <a class="logo" href="./index.html">
-            <img
-              class="logo-icon"
-              src="./images//icons/logo.svg"
-              alt="Logo Simply Chocolate"
-            />
+          <a class="logo" href="./index.html" aria-label="Logo">
+            <svg class="logo-icon" width="169" height="21">
+              <use href="./images/icons/symbol.svg#logo"></use>
+            </svg>
           </a>
+          <button
+            class="burger-btn"
+            type="button"
+            aria-label="Open Menu"
+            data-menu-open
+          >
+            <svg class="burger-icon" width="28" height="28">
+              <use href="./images/icons/symbol.svg#icon-menu"></use>
+            </svg>
+          </button>
           <!-- Menu -->
           <ul class="menu">
             <li class="menu-list">
@@ -97,7 +105,7 @@
     <!-- Main section -->
     <main>
       <!-- HERO section -->
-      <section class="hero" id="#hero">
+      <section class="hero none" id="#hero">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -121,7 +129,7 @@
       </section>
 
       <!-- benefits -->
-      <section class="benefits" id="benefits">
+      <section class="benefits none" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">benefits</h2>
           <ul class="benefits-list">
@@ -158,7 +166,7 @@
       </section>
 
       <!-- ingredients -->
-      <section class="ingredients">
+      <section class="ingredients none">
         <div class="container">
           <h2 class="title">
             It all adds up to one exceptional
@@ -239,5 +247,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

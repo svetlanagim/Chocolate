@@ -101,9 +101,12 @@ body {
 
 .container {
     min-width: 320px;
-    width: 375px;
+    /* width: 375px; */
     margin: 0 auto;
     padding: 0 20px;
+
+    outline: 2px solid rgb(253, 162, 162);
+    outline-offset: -2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -117,6 +120,7 @@ body {
 @media only screen and (min-width: 1200px) {
     .container {
         min-width: 1168px;
+        max-width: 1440px;
         margin: 0 auto;
         padding: 0 16px;
     }
@@ -145,12 +149,12 @@ body {
     color: #fd9222;
 }
 
+
 /*!#region HEADER */
 .header {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     padding: 17px 0;
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -159,9 +163,15 @@ body {
     }
 }
 
+.header-container {
+    display: flex;
+
+}
+
 .nav {
     display: flex;
     align-items: center;
+
     justify-content: space-between;
     width: 100%;
 }
@@ -171,8 +181,7 @@ body {
 }
 
 .logo {
-    /* width: 169px; */
-    /* height: 21px; */
+    margin-right: 47px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -182,7 +191,6 @@ body {
         margin-right: 365px;
     }
 }
-
 
 .logo-icon {
     width: 100%;
@@ -194,6 +202,12 @@ body {
     width: 28px;
     height: 28px;
     padding: 0;
+    color: #111111;
+}
+
+.burger-btn:hover,
+.burger-btn:focus {
+    color: #fd9222;
 }
 
 @media only screen and (min-width: 768px) {
@@ -203,9 +217,8 @@ body {
 }
 
 .burger-icon {
-    stroke: #111111;
+    stroke: currentColor;
 }
-
 
 .menu {
     display: none
@@ -216,6 +229,13 @@ body {
         display: flex;
         align-items: center;
         gap: 24px;
+        margin-right: 28px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .menu {
+        margin-right: 90px;
     }
 }
 
@@ -237,7 +257,6 @@ body {
 
 .socials {
     display: none;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -251,19 +270,28 @@ body {
 
 .socials-list {}
 
-.socials-list-link {}
-
-.socials-icons {
+.socials-list-link {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 10px;
     padding: 8px;
     width: 40px;
     height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    ;
+}
+
+.socials-icons {
+    fill: currentColor;
 }
 
 .socials-icons:hover,
 .socials-icons:active {
     border: 1px solid rgba(253, 146, 34, 0.1);
+    color: #fd9222;
 }
 
 /* #endregion HEADER */
@@ -433,3 +461,114 @@ body {
 }
 
 /* #endregion ingredients */
+
+/* !Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background: #1e1823;
+    transition: transform 400ms ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 28px;
+    color: #fff;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #fd9222;
+}
+
+.close-icon {
+    stroke: currentColor;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: auto;
+}
+
+
+.mobile-menu-item {}
+
+.mobile-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+    color: #fd9222;
+}
+
+.mobile-socials-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.mobile-socials-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.mobile-socials-link {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    ;
+}
+
+.mobile-socials-link:hover,
+.mobile-socials-link:focus,
+.mobile-socials-linc:active {
+    color: #fd9222;
+}
+
+.mobile-socials-icons {
+    fill: currentColor;
+}

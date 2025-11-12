@@ -24,7 +24,7 @@
   <body>
     <!-- Header -->
     <header class="header" id="home">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav">
           <a class="logo" href="./index.html" aria-label="Logo">
             <svg class="logo-icon" width="169" height="21">
@@ -41,6 +41,8 @@
               <use href="./images/icons/symbol.svg#icon-menu"></use>
             </svg>
           </button>
+
+          <!-- !Desktop -->
           <!-- Menu -->
           <ul class="menu">
             <li class="menu-list">
@@ -65,12 +67,10 @@
               rel="noopener noreferrer"
               aria-label="Site facebook.com"
             >
-            </a
-            ><img
-              class="socials-icons"
-              src="./images/icons/facebook.svg"
-              alt="facebook"
-            />
+              <svg class="socials-icons" width="24" height="24">
+                <use href="./images/icons/symbol.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list">
             <a
@@ -79,11 +79,11 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Site instagram.com"
-              ><img
-                class="socials-icons"
-                src="./images/icons/instagram.svg"
-                alt="instagram"
-            /></a>
+            >
+              <svg class="socials-icons" width="24" height="24">
+                <use href="./images/icons/symbol.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list">
             <a
@@ -92,11 +92,11 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Site x.com"
-              ><img
-                class="socials-icons"
-                src="./images/icons/twitter.svg"
-                alt="twitter"
-            /></a>
+            >
+              <svg class="socials-icons" width="24" height="24">
+                <use href="./images/icons/symbol.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -246,7 +246,86 @@
           </ul>
         </div>
       </section>
+
+      <!-- !Mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="close-btn"
+            type="button"
+            aria-label="Close Menu"
+            data-menu-close
+          >
+            <svg class="close-icon" width="28" height="28">
+              <use href="./images/icons/symbol.svg#icon-close"></use>
+            </svg>
+          </button>
+          <!-- Menu -->
+          <nav>
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#home">Home</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#made"
+                  >How it&#8217;s made?</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#reviews"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Socials -->
+          <ul class="mobile-socials-list">
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Site facebook.com"
+              >
+                <svg class="mobile-socials-icons" width="24" height="24">
+                  <use href="./images/icons/symbol.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Site instagram.com"
+              >
+                <svg class="mobile-socials-icons" width="24" height="24">
+                  <use
+                    href="./images/icons/symbol.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link"
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Site x.com"
+              >
+                <svg class="mobile-socials-icons" width="24" height="24">
+                  <use href="./images/icons/symbol.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
+
     <script src="./js/menu.js"></script>
   </body>
 </html>

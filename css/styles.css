@@ -203,10 +203,12 @@ body {
     height: 28px;
     padding: 0;
     color: #111111;
+    transition: color 50ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .burger-btn:hover,
-.burger-btn:focus {
+.burger-btn:focus,
+.burger-btn:active {
     color: #fd9222;
 }
 
@@ -247,9 +249,11 @@ body {
     letter-spacing: -0.02em;
     color: #111;
     padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .menu-list-link:hover,
+.menu-list-link:focus,
 .menu-list-link:active {
     color: #fd9222;
     ;
@@ -286,10 +290,12 @@ body {
 
 .socials-icons {
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .socials-icons:hover,
-.socials-icons:active {
+.socials-icons:active,
+.socials-icons:focus {
     border: 1px solid rgba(253, 146, 34, 0.1);
     color: #fd9222;
 }
@@ -333,10 +339,12 @@ body {
     padding-inline: 40px;
     color: #fff;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), background-color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
-.hero-button-buy:hover {
-    background: #fcf1e0;
+.hero-button-buy:hover,
+.hero-button-buy:focus {
+    background-color: #fcf1e0;
     color: #fd9222;
 }
 
@@ -348,6 +356,7 @@ body {
     padding-block: 14px;
     padding-inline: 40px;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), border 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hero-button-made:hover {
@@ -472,6 +481,7 @@ body {
     transform: translateX(100%);
     background: #1e1823;
     transition: transform 400ms ease-in;
+    overflow-y: scroll;
 }
 
 @media only screen and (min-width: 768px) {
@@ -487,12 +497,16 @@ body {
 .mobile-menu-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    padding: 20px;
+    padding: 136px 20px 20px;
 
 }
 
 .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,11 +518,13 @@ body {
     margin-left: auto;
     margin-bottom: 28px;
     color: #fff;
+    transition: color 50ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus {
     color: #fd9222;
+    transform: scale(1.1);
 }
 
 .close-icon {
@@ -531,6 +547,7 @@ body {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .mobile-menu-link:hover,
@@ -560,6 +577,7 @@ body {
     width: 40px;
     height: 40px;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
     ;
 }
 

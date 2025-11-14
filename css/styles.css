@@ -358,7 +358,7 @@ body {
     border-radius: 30px;
     background-image:
         linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-        url("../images/hero-bg_lg@1x.jpg");
+        url("../images/hero-bg_lg@1x.webp");
 
     background-repeat: no-repeat;
     background-position: center;
@@ -369,7 +369,7 @@ body {
     .hero-container {
         background-image:
             linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-            url("../images/hero-bg_lg@2x.jpg");
+            url("../images/hero-bg_lg@2x.webp");
     }
 }
 

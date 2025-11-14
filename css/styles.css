@@ -72,6 +72,7 @@ ol {
 a {
     color: currentColor;
     text-decoration: none;
+    cursor: pointer;
 }
 
 button {
@@ -126,7 +127,7 @@ body {
     }
 }
 
-.title {
+.section-title {
     /* width: 412px; */
     margin: 0 auto 50px;
     font-weight: 600;
@@ -139,7 +140,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .title {
+    .section-title {
         font-size: 24px;
         line-height: 1.16;
     }
@@ -149,8 +150,50 @@ body {
     color: #fd9222;
 }
 
+/* BUTTON */
+/* #region btn */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
 
-/*!#region HEADER */
+    background: #fd9222;
+    border: none;
+
+    border-radius: 100px;
+    padding: 12px 28px;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), background-color 250ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    .btn {
+        padding: 14px 40px;
+    }
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fcf1e0;
+    color: #fd9222;
+    transform: scale(1.1);
+}
+
+.hero-btn-transparent {
+
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), border 250ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hero-button-made:hover,
+.hero-button-made:focus {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+/* #endregion  btn */
+
+/* #region HEADER */
 .header {
     /* display: flex;
     align-items: center; */
@@ -194,6 +237,10 @@ body {
 
 .logo-icon {
     width: 100%;
+}
+
+.logo-icon:hover {
+    transform: scale(1.1);
 }
 
 .burger-btn {
@@ -248,7 +295,7 @@ body {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #111;
-    padding: 32px 0;
+    /* padding: 32px 0; */
     transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
@@ -256,7 +303,6 @@ body {
 .menu-list-link:focus,
 .menu-list-link:active {
     color: #fd9222;
-    ;
 }
 
 .socials {
@@ -285,95 +331,135 @@ body {
     align-items: center;
     justify-content: center;
     color: #111;
-    ;
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), border-color 250ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.socials-list-link:hover,
+.socials-list-link:focus {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+    color: #fd9222;
 }
 
 .socials-icons {
     fill: currentColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .socials-icons:hover,
-.socials-icons:active,
 .socials-icons:focus {
-    border: 1px solid rgba(253, 146, 34, 0.1);
-    color: #fd9222;
+    transform: scale(1.1);
 }
 
 /* #endregion HEADER */
 
 /* #region HERO section */
 .hero {
-    border-radius: 30px;
-    background: rgba(17, 17, 17, 0.4);
     color: #fff;
-    padding: 381px 40px 40px;
+}
+
+.hero-container {
+    padding: 395px 20px 20px;
     margin-bottom: 80px;
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.4) url(/images/hero-bg_lg@1x.webp) no-repeat center center;
+    background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+    .hero-container {
+        background: rgba(17, 17, 17, 0.4) url(/images/hero-bg_lg@2x.webp) no-repeat center center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        padding: 678px 40px 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-container {
+        padding: 381px 40px 40px;
+    }
 }
 
 .hero-title {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
-    max-width: 484px;
     margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        max-width: 484px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
 }
 
 .hero-wrapper {
     display: flex;
-    justify-content: space-between;
-}
-
-.hero-controls {
-    display: flex;
-    gap: 14px;
+    flex-wrap: wrap;
+    gap: 32px 14px;
     align-items: center;
-}
-
-.hero-button-buy {
-    font-weight: 600;
-    background: #fd9222;
-    border-radius: 100px;
-    padding-block: 14px;
-    padding-inline: 40px;
-    color: #fff;
-    border: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), background-color 250ms cubic-bezier(0.4, 0, 1, 1);
-}
-
-.hero-button-buy:hover,
-.hero-button-buy:focus {
-    background-color: #fcf1e0;
-    color: #fd9222;
-}
-
-.hero-button-made {
-    font-weight: 600;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 100px;
-    padding-block: 14px;
-    padding-inline: 40px;
-    color: #fff;
-    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), border 250ms cubic-bezier(0.4, 0, 1, 1);
-}
-
-.hero-button-made:hover {
-    border: 1px solid #fd9222;
-    color: #fd9222;
 }
 
 .hero-link {
     display: flex;
     align-items: center;
     gap: 14px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    transition: color 50ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-link {
+        font-size: 14px;
+        line-height: 1.28;
+        margin-left: auto;
+    }
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: #fd9222;
+}
+
+.hero-link:hover .hero-scroll,
+.hero-link:focus .hero-scroll {
+    fill: #fff;
+    background-color: #fd9222;
+    transform: scale(1.1);
 }
 
 .hero-scroll {
     border-radius: 100%;
+    fill: #fd9222;
     background-color: #fff;
+    width: 28px;
+    height: 28px;
+    transition: fill 50ms cubic-bezier(0.4, 0, 1, 1), background-color 50ms cubic-bezier(0.4, 0, 1, 1), transform 50ms cubic-bezier(0.4, 0, 1, 1);
 }
+
+
+@media only screen and (min-width: 768px) {
+    .hero-scroll {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* 
+.hero-scroll:hover,
+.hero-scroll:focus {
+    fill: #fff;
+    background-color: #fd9222;
+} */
 
 /* #endregion HERO section */
 
@@ -500,7 +586,6 @@ body {
     justify-content: space-between;
     height: 100%;
     padding: 136px 20px 20px;
-
 }
 
 .close-btn {
@@ -553,6 +638,7 @@ body {
 .mobile-menu-link:hover,
 .mobile-menu-link:active {
     color: #fd9222;
+
 }
 
 .mobile-socials-list {
@@ -577,7 +663,7 @@ body {
     width: 40px;
     height: 40px;
     color: #fff;
-    transition: color 250ms cubic-bezier(0.4, 0, 1, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 1, 1), border-color 250ms cubic-bezier(0.4, 0, 1, 1);
     ;
 }
 
@@ -585,8 +671,15 @@ body {
 .mobile-socials-link:focus,
 .mobile-socials-linc:active {
     color: #fd9222;
+    border-color: rgba(253, 146, 34, 0.1);
 }
 
 .mobile-socials-icons {
     fill: currentColor;
+}
+
+.mobile-socials-icons:hover,
+.mobile-socials-icons:focus,
+.mobile-socials-icons:active {
+    transform: scale(1.1);
 }

@@ -356,10 +356,13 @@ body {
     padding: 395px 20px 20px;
     margin-bottom: 80px;
     border-radius: 30px;
-    background: linear-gradient(rgba(17, 17, 17, 0.4),
-            rgba(17, 17, 17, 0.4)),
-        url(../images/hero-bg_lg@1x.webp) rgba(17, 17, 17, 0.4) no-repeat center/cover;
-    /* background-size: cover; */
+    background-image:
+        linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url("../images/hero-bg_lg@1x.webp");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-resolution: 192dpi) {

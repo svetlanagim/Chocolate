@@ -118,8 +118,6 @@ section:not(:first-of-type) {
     margin: 0 auto;
     padding: 0 20px;
 
-    /* outline: 2px solid rgb(253, 162, 162);
-    outline-offset: -2px; */
 }
 
 @media only screen and (min-width: 768px) {

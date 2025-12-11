@@ -42,7 +42,9 @@
 /* #endregion FONTS*/
 
 /* BODY */
-
+html {
+    scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {

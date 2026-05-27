@@ -113,10 +113,10 @@
               moment of pure delight!
             </h1>
             <div class="hero-wrapper">
-              <button class="btn" type="button">Buy now</button>
-              <button class="btn hero-btn-transparent" type="button">
+              <a class="btn" href="#products">Buy now</a>
+              <a class="btn hero-btn-transparent" href="#made">
                 How it’s made
-              </button>
+              </a>
               <a class="hero-link" href="#benefits"
                 >scroll down
                 <svg class="hero-scroll" width="16" height="16">
@@ -354,7 +354,7 @@
       </section>
 
       <!-- PRODUCTS -->
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h2 class="title">Our <span class="accent-text">products</span></h2>
           <ul class="products-list">
@@ -565,7 +565,6 @@
             </li>
           </ul>
         </div>
-        <div></div>
       </section>
 
       <!-- reviews -->
@@ -738,8 +737,8 @@
                   placeholder="Enter your email"
                 />
               </label>
+              <button class="btn footer-btn" type="submit">Subscribe</button>
             </form>
-            <button class="btn footer-btn" type="submit">Subscribe</button>
           </div>
         </div>
       </div>
@@ -843,6 +842,7 @@
                 type="text"
                 id="user-name"
                 name="user-name"
+                autocomplete="name"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -859,6 +859,7 @@
                 type="email"
                 id="user-email"
                 name="user-email"
+                autocomplete="email"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -874,6 +875,7 @@
                 type="tel"
                 id="user-phone"
                 name="user-phone"
+                autocomplete="tel"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -898,6 +900,7 @@
               id="user-privacy"
               name="user-privacy"
               value="true"
+              required
             />
             <label class="agreement-wrapper" for="user-privacy">
               <span class="agreement-checkbox">

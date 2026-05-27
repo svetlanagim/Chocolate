@@ -255,9 +255,6 @@ section:not(:first-of-type) {
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    .nav {}
-}
 
 .logo {
     margin-right: 47px;
@@ -391,7 +388,7 @@ section:not(:first-of-type) {
 
 @media only screen and (min-width: 768px) {
     .hero {
-        margin-bottom: -40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -403,7 +400,6 @@ section:not(:first-of-type) {
 
 .hero-container {
     padding: 395px 20px 20px;
-    margin-bottom: 80px;
     border-radius: 30px;
     background-image:
         linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
@@ -425,12 +421,14 @@ section:not(:first-of-type) {
 @media only screen and (min-width: 768px) {
     .hero-container {
         padding: 678px 40px 40px;
+
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .hero-container {
         padding: 381px 40px 40px;
+
     }
 }
 
@@ -613,7 +611,7 @@ section:not(:first-of-type) {
     color: rgba(255, 255, 255, 0.7);
 }
 
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
     .benefits-desc {
         line-height: 1.28;
     }
@@ -1472,7 +1470,7 @@ section:not(:first-of-type) {
 
 .mobile-socials-link:hover,
 .mobile-socials-link:focus,
-.mobile-socials-linc:active {
+.mobile-socials-link:active {
     color: #fd9222;
     border-color: rgba(253, 146, 34, 0.1);
 }

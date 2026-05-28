@@ -1301,7 +1301,7 @@ section:not(:first-of-type) {
 
 .footer-form {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
